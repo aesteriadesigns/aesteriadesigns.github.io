@@ -340,7 +340,7 @@ footer {
         line-height: 2em;
     }
 
-    nav {
+    nav, #click-through {
         display: none!important;
     }
 
@@ -354,6 +354,10 @@ footer {
 
     .content-wrapper {
         background: var(--main-bg-colour);
+    }
+
+    .wrapper {
+        border-radius: 0px;
     }
 
     .inner-wrapper {
