@@ -350,6 +350,7 @@ footer {
 
     #header-intro h1 {
         font-size: 2em;
+        text-shadow: 2px 0px 0px var(--accent1-colour);
     }
 
     .content-wrapper {
