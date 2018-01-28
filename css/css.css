@@ -132,7 +132,7 @@ header {
 
 #click-through {
     position: absolute;
-    bottom: 20;
+    bottom: 20px;
     color: var(--main-bg-colour);
     font-size: 1.3em;
 }
