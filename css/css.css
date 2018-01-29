@@ -383,6 +383,7 @@ footer {
 
     .content-wrapper {
         background: var(--main-bg);
+        height: auto;
     }
 
     .wrapper {
