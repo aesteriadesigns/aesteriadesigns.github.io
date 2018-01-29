@@ -172,7 +172,12 @@ nav li a {
 }
 
 nav li a:hover {
-    color: var(--main-bg-colour);
+    background-color: var(--main-bg-colour);
+    color: var(--accent1-colour);
+}
+
+nav li a:hover::before {
+    background-color: var(--accent1-colour);
 }
 
 nav li a::before {

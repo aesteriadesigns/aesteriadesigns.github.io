@@ -13,62 +13,25 @@
 <link rel="icon" href="../img/favicon.png" type="image/png" sizes="16x16">
 
 <link rel="stylesheet" href="css/css.css">
-
+<link href="css/progress-bars.min.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700|Crimson" rel="stylesheet">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<script src="https://use.fontawesome.com/3ef4dfb6e0.js"></script>
-
-<link href="http://static.tumblr.com/cqvi50o/Gdmow3yoo/pt-percentages.min.css" rel="stylesheet" type="text/css">
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"></script>
-
-<script src="js/noframework.waypoints.min.js"></script>
-
-<script type="text/javascript">
-(function($) {
-    $(document).ready(function(){
-        $(window).scroll(function(){
-            if ($(this).scrollTop() > 600) {
-                $('nav').fadeIn(500);
-            } else {
-                $('nav').fadeOut(500);
-            }
-        });
-    });
-})(jQuery);
-</script>
-
-<script type="text/javascript" src="http://static.tumblr.com/cqvi50o/VSzox2ncv/style-my-tooltips.js"></script>
-<script>
-    (function($) {
-        $(document).ready(function() {
-            $("[title]").style_my_tooltips({
-                tip_follows_cursor: true,
-                tip_delay_time: 200,
-                tip_fade_speed: 300
-            });
-        });
-    })(jQuery);
-</script>
 
 </head>
 
 <body>
 
-<section id="container">
+<section id="container"> <!-- container -->
 
-    <nav>
+    <nav> <!-- nav -->
         <ul>
-            <li><a href="#about-wrapper">about</a></li>
-            <li><a href="#services-wrapper">services</a></li>
-            <li><a href="#portfolio-wrapper">portfolio</a></li>
-            <li><a href="#skills-wrapper">skills</a></li>
-            <li><a href="#contact">contact</a></li>
-    </nav>
+            <li><a href="#about-wrapper">01. about</a></li>
+            <li><a href="#services-wrapper">02. services</a></li>
+            <li><a href="#portfolio-wrapper">03. portfolio</a></li>
+            <li><a href="#skills-wrapper">04. skills</a></li>
+            <li><a href="#contact">05. contact</a></li>
+    </nav> <!-- nav -->
 
-    <header id="header"> <!-- beginning of header -->
+    <header id="header"> <!-- header -->
         <article id="header-intro">
             <h1 id="first">Aesteria<br>Designs</h1>
             <h1 id="second">Kayla<br>Hughes</h1>
@@ -76,12 +39,12 @@
         </article>
 
         <a id="click-through" href="#about-wrapper" title="click to read more"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-    </header> <!-- end of header -->
+    </header> <!-- header -->
 
-    <section id="section-wrapper">
+    <div id="section-wrapper"> <!-- section wrapper -->
 
-    <div class="content-wrapper" id="about-wrapper">
-        <article class="wrapper" id="about">
+    <div class="content-wrapper" id="about-wrapper"> <!-- about wrapper -->
+        <article class="wrapper" id="about"> <!-- about section -->
 
         <h1><span>01.</span> about</h1>
 
@@ -93,11 +56,11 @@
 
         <p>In my spare time I like to spend countless hours creating new D&D characters I'll probably never use, reading <i>(and on the rare occasion, writing)</i> poetry, immersing myself into fictional universes, and drinking copious amounts of bubble tea.</p>
 
-        </article>
-    </div>
+    </article> <!-- about section -->
+</div> <!-- about wrapper -->
 
-    <div class="content-wrapper" id="services-wrapper">
-        <article class="wrapper" id="services">
+    <div class="content-wrapper" id="services-wrapper"> <!-- services wrapper -->
+        <article class="wrapper" id="services"> <!-- services section -->
 
         <h1><span>02.</span> services</h1>
 
@@ -129,11 +92,11 @@
 
         </div>
 
-        </article>
-    </div>
+        </article> <!-- services section -->
+    </div> <!-- services wrapper -->
 
-    <div class="content-wrapper" id="portfolio-wrapper">
-        <article class="wrapper" id="portfolio">
+    <div class="content-wrapper" id="portfolio-wrapper"> <!-- portfolio wrapper -->
+        <article class="wrapper" id="portfolio"> <!-- portfolio section -->
 
         <h1><span>03.</span> portfolio</h1>
 
@@ -145,11 +108,11 @@
             <a href="/portfolio-webdev.html" title="view web development portfolio">web development</a>
         </div>
 
-        </article>
-    </div>
+    </article> <!-- portfolio section -->
+    </div> <!-- portfolio wrapper -->
 
-    <div class="content-wrapper" id="skills-wrapper">
-        <article class="wrapper" id="skills">
+    <div class="content-wrapper" id="skills-wrapper"> <!-- skills wrapper -->
+        <article class="wrapper" id="skills"> <!-- skills section -->
 
         <h1><span>04.</span> skills</h1>
 
@@ -207,21 +170,22 @@
 
         </div>
 
-        </article>
-    </div>
+        </article> <!-- skills section -->
+    </div> <!-- skills wrapper -->
 
-    <div class="content-wrapper" id="contact-wrapper">
-        <article class="wrapper" id="contact">
+    <div class="content-wrapper" id="contact-wrapper"> <!-- contact wrapper -->
+        <article class="wrapper" id="contact"> <!-- contact section -->
 
         <h1><span>05.</span> contact</h1>
 
         <p>Have a project in mind? I would love to work with you! Please send an email to <b>aesteriadesigns@gmail.com</b>.</p>
 
-        </article>
-    </div>
-    </section>
+        </article> <!-- contact section -->
+    </div> <!-- contact wrapper -->
 
-    <footer id="footer">
+</div> <!-- end of section wrapper -->
+
+    <footer id="footer"> <!-- footer -->
         <div id="footer-social">
             <a href="http://instagram.com/aesteriadesigns" title="intagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 
@@ -235,30 +199,17 @@
         <div id="footer-info">
             &copy; 2018 kayla hughes
         </div>
-    </footer>
+    </footer> <!-- end of footer -->
 
-</section>
+</section> <!-- container -->
 
-<script>
-$('a[href^="#"]').on('click', function(event) {
-    var target = $(this.getAttribute('href'));
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().top
-        }, 500);
-    }
-});
-</script>
-
-<script>
-$(function() {
-  $("nav li").click(function() {
-    $(this).siblings().removeClass('active');
-    $(this).addClass('active');
-  });
-});
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/active.js"></script>
+<script src="js/anchor.js"></script>
+<script src="js/fadenav.js"></script>
+<script src="js/tooltips.js"></script>
+<script src="https://use.fontawesome.com/3ef4dfb6e0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"></script>
 
 </body>
 
