@@ -71,12 +71,12 @@ i {
 
 #s-m-t-tooltip {
     max-width: 300px;
-    z-index: 100;
     margin: -24px 14px 7px 12px;
     padding: 2px 6px;
     background-color: var(--accent2-colour);
     color: var(--main-bg-colour);
     border-radius: 3px;
+    z-index: 100;
 }
 
 body {
@@ -97,6 +97,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
 }
 
 #header-intro {
@@ -136,16 +140,17 @@ header {
 }
 
 #click-through > i {
-    color: var(--main-txt-colour);
+    color: var(--main-bg-colour);
 }
 
 /** navigation **/
 nav {
+    display: none;
     padding: 20px 20px 20px 0;
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    display: none;
+    z-index: 2;
 }
 
 nav ul {
@@ -153,30 +158,48 @@ nav ul {
     list-style: none;
 }
 
-nav li a {
-    color: var(--nav-colour);
-    font-family: monospace;
-    cursor: help;
+nav li {
+    margin: 5px 0;
 }
 
-nav li::before {
+nav li a {
+    padding: 2px 4px;
+    background: var(--accent1-colour);
+    color: var(--main-bg-colour);
+    font-family: monospace;
+    cursor: help;
+    border-radius: 3px;
+}
+
+nav li a:hover {
+    color: var(--main-bg-colour);
+}
+
+nav li a::before {
     display: inline-block;
     margin-right: 15px;
     content: '';
     width: 15px;
     height: 1px;
     vertical-align: middle;
-    background: var(--nav-colour);
+    background: var(--main-bg-colour);
     transition: 0.4s;
 }
 
-nav li.active::before {
+nav li.active a::before {
     width: 45px;
-    background-color: var(--accent2-colour);
+    background-color: var(--accent1-colour);
 }
 
 nav li.active a {
-    color: var(--accent2-colour);
+    background-color: var(--main-bg-colour);
+    color: var(--accent1-colour);
+}
+
+#section-wrapper {
+    position: relative;
+    margin-top: 100vh;
+    z-index: 1;
 }
 
 /** wrapper **/
@@ -249,17 +272,17 @@ nav li.active a {
 }
 
 .inner-column h3 {
-    margin: 20px 10px;
+    margin: 20px 0;
     padding: 10px;
     text-align: center;
-    background: var(--accent1-colour);
+    background: var(--accent2-colour);
     color: var(--main-bg-colour);
     border: 2px solid var(--main-bg-colour);
 }
 .inner-column:hover h3 {
     background: transparent;
-    color: var(--accent1-colour);
-    border: 2px solid var(--accent1-colour);
+    color: var(--accent2-colour);
+    border: 2px solid var(--accent2-colour);
 }
 
 /** portfolio **/
@@ -273,10 +296,6 @@ nav li.active a {
     margin: 0 10px;
     font-size: 1.2em;
     text-transform: uppercase;
-}
-
-#inner-portfolio a:hover {
-    font-size: 1.4em;
 }
 
 .pt-progress-bar {
@@ -306,6 +325,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     padding: 20px 0;
+    background: var(--main-bg-colour);
     text-transform: uppercase;
 }
 
@@ -342,6 +362,14 @@ footer {
 
     nav, #click-through {
         display: none!important;
+    }
+
+    header {
+        position: inherit;
+    }
+
+    #section-wrapper {
+        margin-top: 0;
     }
 
     #header-intro {
