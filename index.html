@@ -24,11 +24,12 @@
 
     <nav> <!-- nav -->
         <ul>
-            <li><a href="#about-wrapper">01. about</a></li>
-            <li><a href="#services-wrapper">02. services</a></li>
-            <li><a href="#portfolio-wrapper">03. portfolio</a></li>
-            <li><a href="#skills-wrapper">04. skills</a></li>
-            <li><a href="#contact">05. contact</a></li>
+            <li id="aboutlink"><a href="#about-wrapper">01. about</a></li>
+            <li id="serviceslink"><a href="#services-wrapper">02. services</a></li>
+            <li id="portfoliolink"><a href="#portfolio-wrapper">03. portfolio</a></li>
+            <li id="skillslink"><a href="#skills-wrapper">04. skills</a></li>
+            <li id="contactlink"><a href="#contact-wrapper">05. contact</a></li>
+        </ul>
     </nav> <!-- nav -->
 
     <header id="header"> <!-- header -->
@@ -46,7 +47,7 @@
     <div class="content-wrapper" id="about-wrapper"> <!-- about wrapper -->
         <article class="wrapper" id="about"> <!-- about section -->
 
-        <h1><span>01.</span> about</h1>
+        <h1><span>01.</span>About</h1>
 
         <p><b>Hi!</b> My name is Kayla and I am a freelance graphic designer and front-end web developer.</p>
 
@@ -57,12 +58,12 @@
         <p>In my spare time I like to spend countless hours creating new D&D characters I'll probably never use, reading <i>(and on the rare occasion, writing)</i> poetry, immersing myself into fictional universes, and drinking copious amounts of bubble tea.</p>
 
     </article> <!-- about section -->
-</div> <!-- about wrapper -->
+    </div> <!-- about wrapper -->
 
     <div class="content-wrapper" id="services-wrapper"> <!-- services wrapper -->
         <article class="wrapper" id="services"> <!-- services section -->
 
-        <h1><span>02.</span> services</h1>
+        <h1><span>02.</span> Services</h1>
 
         <div class="inner-wrapper">
 
@@ -98,14 +99,14 @@
     <div class="content-wrapper" id="portfolio-wrapper"> <!-- portfolio wrapper -->
         <article class="wrapper" id="portfolio"> <!-- portfolio section -->
 
-        <h1><span>03.</span> portfolio</h1>
+        <h1><span>03.</span> Portfolio</h1>
 
         <p>My portfolio is divided into two sections, graphic design and web development and includes commissioned work as well as work done in my own free time.</p>
 
         <div id="inner-portfolio">
-            <a href="/portfolio-design.html" title="view graphic design portfolio">graphic design</a>
+            <a href="portfolio-design.html" title="view graphic design portfolio">graphic design</a>
             <span id="break">/</span>
-            <a href="/portfolio-webdev.html" title="view web development portfolio">web development</a>
+            <a href="portfolio-webdev.html" title="view web development portfolio">web development</a>
         </div>
 
     </article> <!-- portfolio section -->
@@ -114,9 +115,9 @@
     <div class="content-wrapper" id="skills-wrapper"> <!-- skills wrapper -->
         <article class="wrapper" id="skills"> <!-- skills section -->
 
-        <h1><span>04.</span> skills</h1>
+        <h1><span>04.</span> Skills</h1>
 
-        <p>I'm currently a student studying Graphic Design at the moment, and as such I'll be using these programs more and more. In my spare time I like to try and broaden my skills in a number of areas.</p>
+        <p>I'm currently a student studying Graphic Design, and as such I'll be using these programs more and more. In my spare time I like to try and broaden my skills in a number of areas.</p>
 
         <div class="inner-wrapper">
 
@@ -176,7 +177,7 @@
     <div class="content-wrapper" id="contact-wrapper"> <!-- contact wrapper -->
         <article class="wrapper" id="contact"> <!-- contact section -->
 
-        <h1><span>05.</span> contact</h1>
+        <h1><span>05.</span> Contact</h1>
 
         <p>Have a project in mind? I would love to work with you! Please send an email to <b>aesteriadesigns@gmail.com</b>.</p>
 
@@ -204,8 +205,12 @@
 </section> <!-- container -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/waypoints.js"></script>
 <script src="js/active.js"></script>
 <script src="js/anchor.js"></script>
+<script src="js/killme.js"></script>
 <script src="js/fadenav.js"></script>
 <script src="js/tooltips.js"></script>
 <script src="https://use.fontawesome.com/3ef4dfb6e0.js"></script>

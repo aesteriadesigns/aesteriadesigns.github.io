@@ -55,7 +55,7 @@ b {
 i {
     color: var(--accent2);
 }
-
+/**
 ::-webkit-scrollbar {
     width: 14px;
     background-color: var(--border);
@@ -68,7 +68,7 @@ i {
     border: 4px solid var(--main-bg);
     border-radius: 10px;
 }
-
+**/
 #s-m-t-tooltip {
     max-width: 300px;
     margin: -24px 14px 7px 12px;
