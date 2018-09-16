@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+
+<title>Aesteria Designs</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans|Karla" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+<link href="../css/stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<nav>
+		<a href="/" title="Aesteria Designs" id="nav-title">Aesteria Designs</a>
+
+		<ul id="nav-menu">
+			<li><a href="#about-wrapper" title="About">About</a></li>
+			<li><a href="#work-wrapper" title="Work">Work</a></li>
+			<li><a href="#contact-wrapper" title="Contact">Contact</a></li>
+		</ul>
+	</nav> <!-- nav -->
+
+	<section id="container">
+
+		<article id="project-wrapper">
+
+			<div id="project-header">
+				<span id="project-title">Australian Ballet Brochure</span>
+			</div> <!-- project-header -->
+
+			<div id="project-slideshow">
+				<div class="siema">
+				  <div><img src="https://i.imgur.com/a0tAJfo.png" alt="Australian Ballet Brochure Cover"></div>
+				  <div><img src="https://i.imgur.com/oJe5j47.png" alt="Australian Ballet Brochure Outside"></div>
+				  <div><img src="https://i.imgur.com/IxOfSFy.jpg" alt="Australian Ballet Brochure Inside"></div>
+				  <div><img src="https://i.imgur.com/vnLkMz3.png" alt="Australian Ballet Brochure Folded"></div>
+				</div>
+
+				<div class="siema-controls">
+					<button class="prev">prev</button>
+					<button class="next">next</button>
+				</div> <!-- siema-controls -->
+			</div> <!-- project-slideshow -->
+
+			<div id="project-text">
+
+				<p>The Australian Ballet is one of the world’s premier ballet companies and has delivered extraordinary performances for over 50 years. A commitment to artistic excellence, a spirited style and a willingness to take risks have defined the company from its earliest days, both onstage and off.</p>
+
+				<p>The Australian Ballet is touring its acclaimed performance of Cinderella. They require a series of supporting promotional and educational pieces to be developed. These items of collateral will be distributed to raise awareness of the performance as it makes its way around the country</p>
+
+				<p>The client wanted a DL size promotional brochure that only used two inks to reduce printing costs. Before I began work on this project, I gathered images of ballet, brochure designs, as well as two-colour designs to create a moodboard to serve as inspiration. After sketching out multiple thumbnails of possible layouts, I narrowed it down two different concepts.</p>
+
+				<p>After presenting both concepts to the client, we agreed on a final design that was a mix of both. As the client had no specific colour palette in mind, I also presented a variety of palettes that I believed would suit the theme of the brochure the most. In the end, it came down to a vibrant pink and a dark blue.</p>
+
+				<p>The paper stock chosen for this brochure was <em>Curious Metallics Ice Silver 300GSM</em> as it's a more creative and high-end paper stock which compliments both the layout and the concept of the brochure.</p>
+
+			</div> <!-- project-text -->
+
+		</article> <!-- project-wrapper -->
+
+		<footer>
+			<div id="footer-copy">
+				<span>Copyright &copy; 2018</span>
+			</div> <!-- footer-copy -->
+
+			<div id="footer-name">
+				<span>Aesteria Designs</span>
+			</div> <!-- footer-name -->
+
+			<div id="footer-rights">
+				<span>All Rights Reserved</span>
+			</div> <!-- footer-rights -->
+		</footer>
+
+	</section> <!-- container -->
+
+<script src="https://use.fontawesome.com/3ef4dfb6e0.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="../js/siema.min.js"></script>
+<script>
+const mySiema = new Siema({
+duration: 600,
+});
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+
+prev.addEventListener('click', () => mySiema.prev());
+next.addEventListener('click', () => mySiema.next());
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+<script src="js/smoothscroll.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,425 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	line-height: 1.6em;
+	color: #333333;
+}
+
+a {
+	color: #e8b8c0;
+	text-decoration: none;
+	transition: 0.3s ease-in-out;
+}
+
+a:hover {
+	color: #db8ea8;
+}
+
+button {
+	padding: 15px;
+	font-family: inherit;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+	background: none;
+	color: #99a4a4;
+	outline: none;
+	border: 2px solid #99a4a4;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+
+button:hover {
+	background: #99a4a4;
+	color: #ffffff;
+	border: 2px solid #99a4a4;
+}
+
+button a {
+	color: #99a4a4;
+}
+
+button a:hover {
+	color: #ffffff;
+}
+
+button:hover > button a {
+	color: #ffffff!important;
+}
+
+nav,
+footer {
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#nav-title {
+	padding: 0 10px 10px 10px;
+	color: inherit;
+	font-size: 1.5em;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border-bottom: 3px solid #e8b8c0;
+}
+
+#nav-menu li {
+	margin: 0 20px;
+	display: inline-block;
+	font-weight: bold;
+}
+
+#container {
+	width: 100%;
+}
+
+article {
+	margin: 100px auto;
+	width: 100%;
+}
+
+#about-wrapper {
+	padding: 100px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(232, 184, 192, 0.8);
+	background-image: url(../img/pattern.png);
+	background-size: 200px;
+	background-repeat: repeat;
+}
+
+#about {
+	padding: 50px;
+	width: 50%;
+	background: #ffffff;
+	color: inherit;
+	text-align: center;
+	line-height: auto;
+	border: 10px solid #ffffff;
+	border-radius: 5px;
+}
+
+#about h2 {
+	margin-bottom: 50px;
+	font-size: 2.7em;
+}
+
+#about span {
+	color: #b45273;
+	font-size: 1.6em;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+#about strong {
+	color: #b45273;
+}
+
+#about-img img {
+	width: 250px;
+}
+
+#about-img  {
+	margin: 40px 0;
+	/* background-image: url(../img/about/rays.svg);
+	background-repeat: no-repeat;
+	background-position: center; */
+}
+
+#work-wrapper,
+#contact-wrapper {
+	width: 70%;
+}
+
+#work-wrapper {
+	display: flex;
+	align-content: space-between;
+    flex-flow: column wrap;
+}
+
+#work-wrapper button {
+	margin: 50px auto;
+	text-align: center;
+}
+
+#work-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 70px;
+}
+
+.work-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
+
+.work-card img {
+	width: 100%;
+	border-radius: 5px;
+}
+
+.work-card span {
+	padding: 20px;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: calc(100% - 40px);
+	height: calc(100% - 40px);
+	background: #99a4a4;
+	font-size: 1.4em;
+	line-height: 1.4em;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
+	opacity: 0;
+	border-radius: 5px;
+	transition: 0.3s ease-in-out;
+}
+
+.work-card span a {
+	color: #ffffff;
+}
+
+.work-card:hover > span {
+	opacity: 1;
+}
+
+.work-card:hover {
+	cursor: pointer;
+}
+
+#contact-wrapper {
+	margin: 100px auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+#contact-left,
+#contact-right {
+	width: 40%;
+}
+
+#contact-left h2 {
+	font-size: 3em;
+	line-height: 1em;
+	color: #99a4a4;
+	font-weight: bold;
+}
+
+#contact-left a {
+	margin-right: 15px;
+}
+
+#contact-left .fa {
+	font-size: 1.4em;
+	color: #99a4a4;
+	transition: 0.3s ease-in-out;
+}
+
+#contact-left a:hover > .fa {
+	color: #e8b8c0;
+}
+
+#contact-right {
+
+}
+
+#contact-form {
+	width: 100%;
+}
+
+#contact-form input,
+#contact-form textarea {
+	outline: 0;
+	border: 2px solid #99a4a4;
+	display: block;
+	margin: 20px 0;
+	padding: 10px;
+	width: calc(100% - 20px);
+	background: #99a4a4;
+	color: #FFFFFF;
+	font-family: inherit;
+	border-radius: 3px;
+}
+
+#contact-form ::placeholder {
+	color: #ffffff;
+}
+
+#contact-form input:hover,
+#contact-form textarea:hover {
+	cursor: text;
+}
+
+#contact-form input:active,
+#contact-form input:focus,
+#contact-form textarea:active,
+#contact-form textarea:focus,
+#form-submit:hover {
+	background: #ffffff;
+	color: #99a4a4;
+}
+
+#contact-form textarea {
+	height: 200px;
+	resize: none;
+}
+
+#form-submit {
+	width: calc(100% + 5px)!important;
+	border: 2px solid #99a4a4!important;
+	cursor: pointer!important;
+	transition: 0.3s ease-in-out;
+}
+
+#project-wrapper {
+	margin: 0 auto;
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#project-header {
+	margin: 20px auto 80px auto;
+	text-align: center;
+}
+
+#project-title {
+	padding: 0 10px 10px 10px;
+	color: inherit;
+	font-size: 1.5em;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border-bottom: 3px solid #e8b8c0;
+}
+
+#project-text {
+	margin: 50px auto;
+	width: 70%;
+}
+
+.siema {
+	margin: 0 auto;
+	width: 800px;
+}
+
+.siema img {
+	width: 800px;
+	height: auto;
+}
+
+.siema-controls {
+	width: 200px;
+	margin: 10px auto;
+	font-size: 0.7em;
+}
+
+.siema-controls button {
+	margin: 0 20px;
+	padding: 10px;
+}
+
+footer {
+	margin: 80px auto 0 auto;
+	width: 50%;
+	font-size: 0.8em;
+}
+
+@media only screen and (max-width : 900px) and (min-width : 100px) {
+
+	body {
+		font-size: 0.9em;
+	}
+	article {
+		margin: 30px auto;
+	}
+
+	nav {
+		align-items: baseline;
+	}
+
+	#nav-title {
+		font-size: 1em;
+	}
+
+	#nav-menu li {
+		display: block;
+		text-align: right;
+	}
+
+	#about {
+		padding: 20px;
+		width: 75%;
+	}
+
+	#about h2 {
+		font-size: 1.6em;
+	}
+
+	#about-img img {
+		width: 100%;
+	}
+
+	#about p {
+		text-align: left;
+	}
+
+	#work-wrapper {
+		flex-direction: column;
+	}
+
+	#work-grid {
+		display: block;
+	}
+
+	.work-card {
+		margin: 50px 0;
+	}
+
+	#contact-wrapper {
+		flex-direction: column;
+	}
+
+	#contact-left,
+	#contact-right {
+		margin: 20px 0;
+		width: 100%;
+	}
+
+	#project-wrapper {
+		margin: 0 auto;
+		padding: 20px;
+		width: 90%;
+	}
+
+	#project-title {
+		font-size: 1em;
+	}
+
+	#project-text {
+		width: 100%;
+	}
+
+	.siema {
+		width: 90%;
+	}
+
+	.siema img {
+		width: 100%;
+		height: auto;
+	}
+
+	footer {
+		width: 90%;
+	}
+}

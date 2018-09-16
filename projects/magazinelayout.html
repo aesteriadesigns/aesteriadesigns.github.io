@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head>
+
+<title>Aesteria Designs</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans|Karla" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+<link href="../css/stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<nav>
+		<a href="/" title="Aesteria Designs" id="nav-title">Aesteria Designs</a>
+
+		<ul id="nav-menu">
+			<li><a href="#about-wrapper" title="About">About</a></li>
+			<li><a href="#work-wrapper" title="Work">Work</a></li>
+			<li><a href="#contact-wrapper" title="Contact">Contact</a></li>
+		</ul>
+	</nav> <!-- nav -->
+
+	<section id="container">
+
+		<article id="project-wrapper">
+
+			<div id="project-header">
+				<span id="project-title">Magazine Layout</span>
+			</div> <!-- project-header -->
+
+			<div id="project-slideshow">
+				<div class="siema">
+				  <div><img src="https://i.imgur.com/CGJNCBc.png" alt="Letter to the Editor"></div>
+				  <div><img src="https://i.imgur.com/Wjb7NPy.png" alt="Imprint"></div>
+				  <div><img src="https://i.imgur.com/9vNNcVo.png" alt="Contents Page"></div>
+				  <div><img src="https://i.imgur.com/Ju7U6MY.png" alt="Article"></div>
+				</div>
+
+				<div class="siema-controls">
+					<button class="prev">prev</button>
+					<button class="next">next</button>
+				</div> <!-- siema-controls -->
+			</div> <!-- project-slideshow -->
+
+			<div id="project-text">
+
+				<p>The Australian Graphic Design Association (AGDA) is a national organisation for professional graphic designers. It was founded in 1988 to assist the advancement of the Australian graphic design profession.</p>
+
+			</div> <!-- project-text -->
+
+		</article> <!-- project-wrapper -->
+
+		<footer>
+			<div id="footer-copy">
+				<span>Copyright &copy; 2018</span>
+			</div> <!-- footer-copy -->
+
+			<div id="footer-name">
+				<span>Aesteria Designs</span>
+			</div> <!-- footer-name -->
+
+			<div id="footer-rights">
+				<span>All Rights Reserved</span>
+			</div> <!-- footer-rights -->
+		</footer>
+
+	</section> <!-- container -->
+
+<script src="https://use.fontawesome.com/3ef4dfb6e0.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="../js/siema.min.js"></script>
+<script>
+const mySiema = new Siema({
+duration: 600,
+});
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+
+prev.addEventListener('click', () => mySiema.prev());
+next.addEventListener('click', () => mySiema.next());
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+<script src="js/smoothscroll.js"></script>
+
+</body>
+
+</html>

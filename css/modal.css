@@ -1,0 +1,159 @@
+.blocker {
+    position: fixed;
+    top:0;right:0;bottom:0;left:0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.blocker:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.05em;
+}
+
+.blocker.behind {
+    background-color: transparent;
+}
+
+.modal {
+	display: none;
+	position: absolute;
+	margin: auto;
+	top:0;right:0;bottom:0;left:0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background: #ffffff;
+}
+
+.modal a.close-modal {
+	display: none;
+}
+
+.close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 20px;
+	z-index: 99;
+}
+
+.modal-header {
+    text-align: center;
+}
+
+.modal-header h1 {
+	display: inline-block;
+	padding: 0 10px 10px 10px;
+	margin: 50px auto;
+	font-size: 30px;
+    text-align: center;
+	letter-spacing: 1px;
+	border-bottom: 2px solid #e8b8c0;
+}
+
+.modal-wrapper {
+	padding: 100px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.modal-image img {
+	width: 900px;
+	height: auto;
+}
+
+.modal-text,
+.modal-image {
+	margin: 0 auto;
+	width: 60%;
+}
+
+.modal-text p {
+	margin: 75px 0;
+}
+
+.modal-text p:first-of-type {
+	margin-top: 0;
+}
+
+.modal-text p:last-of-type {
+	margin-bottom: 75px;
+	text-align: center;
+}
+
+.modal-close {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	padding: 10px;
+	font-size: 0.8em;
+	font-family: inherit;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+	background: none;
+	color: #99a4a4;
+	outline: none;
+	border: 2px solid #99a4a4;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+
+.modal-close:hover {
+	background: #99a4a4;
+	color: #ffffff;
+	border: 2px solid #99a4a4;
+}
+
+@media only screen and (max-width : 1366px) {
+
+	.modal-text,
+	.modal-image {
+		margin: 0 30px;
+	}
+}
+
+@media only screen and (max-width : 960px) {
+	.modal-wrapper {
+		display: block;
+		margin: 0 auto;
+		padding: 0;
+		width: 90%;
+	}
+
+	.modal-image img {
+		margin: 0 auto 50px;
+		width: 100%;
+	}
+
+	.modal-text,
+	.modal-image {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.modal-text p {
+		margin: 50px auto;
+		width: 100%;
+	}
+
+	.modal-text p:first-of-type {
+		margin-top: 0;
+	}
+
+}
+
+@media only screen and (max-width : 500px) {
+	.modal-wrapper {
+		margin: 0 auto;
+		width: 90%;
+	}
+}

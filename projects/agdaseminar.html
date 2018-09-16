@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<head>
+
+<title>Aesteria Designs</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans|Karla" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+<link href="../css/stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<nav>
+		<a href="/" title="Aesteria Designs" id="nav-title">Aesteria Designs</a>
+
+		<ul id="nav-menu">
+			<li><a href="#about-wrapper" title="About">About</a></li>
+			<li><a href="#work-wrapper" title="Work">Work</a></li>
+			<li><a href="#contact-wrapper" title="Contact">Contact</a></li>
+		</ul>
+	</nav> <!-- nav -->
+
+	<section id="container">
+
+		<article id="project-wrapper">
+
+			<div id="project-header">
+				<span id="project-title">AGDA Seminar Posters</span>
+			</div> <!-- project-header -->
+
+			<div id="project-slideshow">
+				<div class="siema">
+				  <div><img src="https://i.imgur.com/csy39Z2.png" alt="AGDA Seminar 1 Poster"></div>
+				  <div><img src="https://i.imgur.com/xWl2Qbb.png" alt="AGDA Seminar 2 Poster"></div>
+				  <div><img src="https://i.imgur.com/gntu8uZ.png" alt="AGDA Seminar 3 Poster"></div>
+				</div>
+
+				<div class="siema-controls">
+					<button class="prev">prev</button>
+					<button class="next">next</button>
+				</div> <!-- siema-controls -->
+			</div> <!-- project-slideshow -->
+
+			<div id="project-text">
+
+				<p>The Australian Graphic Design Association (AGDA) is a national organisation for professional graphic designers. It was founded in 1988 to assist the advancement of the Australian graphic design profession.</p>
+
+				<p>Their goal is the establishment of fair and productive working relationships between graphic designers and their clients. They carry this out through awards, exhibitions, seminars, information sessions, and professional development activities.</p>
+
+				<p>Each State has a council made up of volunteer designers from numerous studios. Members vote for the Councillors annually, and they in turn devote their time to the betterment of design within their State.</p>
+
+				<p>The client contacted me to produce a series of posters for upcoming seminars. These seminars were aimed at design professionals and seek to inform and assist studios through some trickly legal areas. At the time of this brief, the speakers hadn't be confirmed so the client asked for the posters to focus more on the benefits of the knowledge attained at the seminars.</p>
+
+			</div> <!-- project-text -->
+
+		</article> <!-- project-wrapper -->
+
+		<footer>
+			<div id="footer-copy">
+				<span>Copyright &copy; 2018</span>
+			</div> <!-- footer-copy -->
+
+			<div id="footer-name">
+				<span>Aesteria Designs</span>
+			</div> <!-- footer-name -->
+
+			<div id="footer-rights">
+				<span>All Rights Reserved</span>
+			</div> <!-- footer-rights -->
+		</footer>
+
+	</section> <!-- container -->
+
+<script src="https://use.fontawesome.com/3ef4dfb6e0.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="../js/siema.min.js"></script>
+<script>
+const mySiema = new Siema({
+duration: 600,
+});
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+
+prev.addEventListener('click', () => mySiema.prev());
+next.addEventListener('click', () => mySiema.next());
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+<script src="js/smoothscroll.js"></script>
+
+</body>
+
+</html>
