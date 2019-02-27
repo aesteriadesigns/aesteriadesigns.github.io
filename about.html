@@ -2,20 +2,22 @@
 
 <head>
 
-<title>Australian Ballet Case Study &mdash; KHD</title>
+<title>About &mdash; Kayla Hughes</title>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+<link rel="shortcut icon" href="img/KHD_logo.png">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans|Karla" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
-<link href="../css/stylesheet.css" rel="stylesheet">
+<link href="css/stylesheet.css" rel="stylesheet">
+
 </head>
 
 <body>
 
 	<nav>
-		<a href="/" title="Home"><img src="../img/KHD_logo.svg" alt="KHD Logo"></a>
+		<a href="/" title="Home"><img src="img/KHD_logo.svg" alt="KHD Logo"></a>
 
 		<ul id="nav-menu">
 			<li><a href="/about.html" title="About">About</a></li>
@@ -27,46 +29,28 @@
 
 	<section id="container">
 
-		<article id="project-wrapper">
+		<article id="about-wrapper">
+			<aside id="about-img">
+				<img src="img/about/about.jpg">
+			</aside> <!-- about-img -->
 
-			<div id="project-header">
-				<span id="project-title">Australian Ballet Brochure</span>
-			</div> <!-- project-header -->
+			<aside id="about-text">
+				<h1>Hello!</h1>
 
-			<div id="project-slideshow">
-				<div class="siema">
-				  <div><img src="https://i.imgur.com/a0tAJfo.png" alt="Australian Ballet Brochure Cover"></div>
-				  <div><img src="https://i.imgur.com/oJe5j47.png" alt="Australian Ballet Brochure Outside"></div>
-				  <div><img src="https://i.imgur.com/IxOfSFy.jpg" alt="Australian Ballet Brochure Inside"></div>
-				  <div><img src="https://i.imgur.com/vnLkMz3.png" alt="Australian Ballet Brochure Folded"></div>
-				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<!-- <p>I'm Kayla, a Brisbane-based creative with a love for effective but beautiful design.</p>
 
-				<div class="siema-controls">
-					<button class="prev"><</button>
-					<button class="next">></button>
-				</div> <!-- siema-controls -->
-			</div> <!-- project-slideshow -->
+				<p>My services include:</p>
+				<ul>
+					<li></li>
+				</ul>
 
-			<div id="project-text">
+				<p>My services include branding design. With two years of design experience, I can provide graphic design services such as branding, print design such as posters, flyers, business cards and letterheads, as well as digital design such as social media graphics and web design.</p>
 
-				<!-- <div><img src="https://i.imgur.com/a0tAJfo.png" alt="Australian Ballet Brochure Cover"></div>
-				<div><img src="https://i.imgur.com/oJe5j47.png" alt="Australian Ballet Brochure Outside"></div>
-				<div><img src="https://i.imgur.com/IxOfSFy.jpg" alt="Australian Ballet Brochure Inside"></div>
-				<div><img src="https://i.imgur.com/vnLkMz3.png" alt="Australian Ballet Brochure Folded"></div> -->
+				<p>In my spare time I like to spend my spare time exploring as many creative outlets as possible, whether it's personal pieces of work for my Instagram, prepping pieces for my online store, or stepping outside to find something to paint with my watercolours. I also love to read and write, play the latest video games, and experiment in the kitchen.</p> -->
+			</aside> <!-- about-text -->
 
-				<p>The Australian Ballet is one of the world’s premier ballet companies and has delivered extraordinary performances for over 50 years. A commitment to artistic excellence, a spirited style and a willingness to take risks have defined the company from its earliest days, both onstage and off.</p>
-
-				<p>The Australian Ballet is touring its acclaimed performance of Cinderella. They require a series of supporting promotional and educational pieces to be developed. These items of collateral will be distributed to raise awareness of the performance as it makes its way around the country</p>
-
-				<p>The client wanted a DL size promotional brochure that only used two inks to reduce printing costs. Before I began work on this project, I gathered images of ballet, brochure designs, as well as two-colour designs to create a moodboard to serve as inspiration. After sketching out multiple thumbnails of possible layouts, I narrowed it down two different concepts.</p>
-
-				<p>After presenting both concepts to the client, we agreed on a final design that was a mix of both. As the client had no specific colour palette in mind, I also presented a variety of palettes that I believed would suit the theme of the brochure the most. In the end, it came down to a vibrant pink and a deep blue.</p>
-
-				<p>The paper stock chosen for this brochure was <em>Curious Metallics Ice Silver 300GSM</em> as it's a more creative and high-end paper stock which compliments both the layout and the concept of the brochure.</p>
-			</div> <!-- project-text -->
-
-
-		</article> <!-- project-wrapper -->
+		</article> <!-- about-wrapper -->
 
 		<footer>
 			<div id="footer-wrapper">
@@ -111,7 +95,7 @@
 					<!--End mc_embed_signup-->
 				</div> <!-- footer-rights -->
 			</div> <!-- footer-wrapper -->
-		</footer> <!-- footer -->
+		</footer>
 
 	</section> <!-- container -->
 
@@ -119,10 +103,11 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script src="../js/siema.min.js"></script>
+<script src="js/siema.min.js"></script>
 <script>
 const mySiema = new Siema({
 duration: 600,
+easing: 'cubic-bezier(.17,.67,.68,1.73)'
 });
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
@@ -130,9 +115,11 @@ const next = document.querySelector('.next');
 prev.addEventListener('click', () => mySiema.prev());
 next.addEventListener('click', () => mySiema.next());
 </script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
 <script src="js/smoothscroll.js"></script>
+<script src="js/stickynav.js"></script>
 
 </body>
 
